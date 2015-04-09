@@ -12,19 +12,19 @@ external_url 'http://gitlab.commutiva.pl/'
 ############################
 
 gitlab_rails['gitlab_ssh_host'] = 'ssh.commutiva.pl'
-gitlab_rails['time_zone'] = 'Europe/Paris'
+gitlab_rails['time_zone'] = 'Europe/Warsaw'
 gitlab_rails['gitlab_email_from'] = 'gitlab@commutiva.pl'
 # gitlab_rails['gitlab_default_projects_limit'] = 10
 # gitlab_rails['gitlab_default_can_create_group'] = true
 # gitlab_rails['gitlab_username_changing_enabled'] = true
 # gitlab_rails['gitlab_default_theme'] = 2
-# gitlab_rails['gitlab_signup_enabled'] = false
+gitlab_rails['gitlab_signup_enabled'] = false
 # gitlab_rails['gitlab_signin_enabled'] = true
 # gitlab_rails['gitlab_restricted_visibility_levels'] = nil # to restrict public and internal: ['public', 'internal']
 # gitlab_rails['gitlab_default_projects_features_issues'] = true
 # gitlab_rails['gitlab_default_projects_features_merge_requests'] = true
 # gitlab_rails['gitlab_default_projects_features_wiki'] = true
-# gitlab_rails['gitlab_default_projects_features_snippets'] = false
+gitlab_rails['gitlab_default_projects_features_snippets'] = true
 # gitlab_rails['gitlab_default_projects_features_visibility_level'] = 'private'
 # gitlab_rails['gitlab_repository_downloads_path'] = 'tmp/repositories'
 # gitlab_rails['issues_tracker_redmine'] = false

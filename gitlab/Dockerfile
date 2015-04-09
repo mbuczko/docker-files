@@ -28,12 +28,11 @@ RUN mkdir -p /opt/gitlab/sv/sshd/supervise \
 ADD gitlab.rb /opt/gitlab/etc/gitlab.rb.template
 ADD gitlab.sh /usr/local/bin/gitlab.sh
 RUN chmod +x /usr/local/bin/gitlab.sh
+RUN echo Europe/Warsaw > /etc/timezone && dpkg-reconfigure --frontend noninteractive tzdata
 
 # Expose web & ssh
-EXPOSE 80 22
+EXPOSE 22
 
-# Volume & configuration
-VOLUME ["/var/opt/gitlab", "/var/log/gitlab", "/etc/gitlab"]
 
 # Default is to run runit & reconfigure
 CMD ["/usr/local/bin/gitlab.sh"]
