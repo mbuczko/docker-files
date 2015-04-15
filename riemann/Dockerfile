@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y supervisor
 RUN wget http://aphyr.com/riemann/riemann_0.2.9_all.deb && dpkg -i riemann_0.2.9_all.deb
 RUN wget http://s3.amazonaws.com/influxdb/influxdb_latest_amd64.deb && dpkg -i influxdb_latest_amd64.deb && rm *.deb
 RUN apt-get -y clean all
+RUN gem install riemann-tools
 RUN mkdir /var/log/influx
 RUN echo Europe/Warsaw > /etc/timezone && dpkg-reconfigure --frontend noninteractive tzdata
 
