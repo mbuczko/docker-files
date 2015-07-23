@@ -24,9 +24,7 @@ ENV PATH /usr/share/elasticsearch/bin:$PATH
 COPY config /usr/share/elasticsearch/config
 
 RUN /usr/share/elasticsearch/bin/plugin -install com.github.chytreg/elasticsearch-analysis-morfologik/2.3.1
-RUN /usr/share/elasticsearch/bin/plugin -install royrusso/elasticsearch-HQ
-
-VOLUME /data
+# RUN /usr/share/elasticsearch/bin/plugin -install royrusso/elasticsearch-HQ
 
 EXPOSE 9200 9300
 
