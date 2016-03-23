@@ -1,8 +1,7 @@
-FROM mbuczko/java8:latest
+FROM iron/java:1.8
 MAINTAINER Michal Buczko "michal@buczko.pl"
 
 RUN groupadd -r redis && useradd -r -g redis redis
-
 RUN apt-get install -y curl && rm -rf /var/lib/apt/lists/*
 
 # grab gosu for easy step-down from root
