@@ -1,0 +1,14 @@
+samochod => auto
+motor => motocykl
+rama, ramy => ram
+gen, genio => genie
+vw, wolkgsvagen, volzwagen => car volkswagen
+reno => car renault
+peugot => car peugeot
+kaszlak, kaszel, maluch => car fiat 126
+buma => car bmw
+cytryna => car citroen
+kaczka => car citroen 2cv
+skarpeta => car syrena
+warczyburg => car wartburg
+garbus => car volkswagen beetle
